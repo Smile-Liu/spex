@@ -1,0 +1,16 @@
+<beans xmlns="http://www.spex.liu/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.spex.liu/schema/beans 
+						http://www.spex.liu/schema/beans/spex-beans.xsd">
+
+	<bean id="beanNonArgs" class="org.spex.test.beanInstantiation.BeanInstantiationTest" />
+	
+	<bean id="beanOneArg" class="org.spex.test.beanInstantiation.BeanInstantiationTest">
+		<constructor-arg index="0" value="啊" />
+	</bean>
+	
+	<bean id="beanTwoArgs" class="org.spex.test.beanInstantiation.BeanInstantiationTest">
+		<constructor-arg index="0" value="啊" />
+		<constructor-arg index="1" ref="beanNonArgs" />
+	</bean>
+</beans>

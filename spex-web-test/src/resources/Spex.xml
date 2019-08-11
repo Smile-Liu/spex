@@ -1,0 +1,8 @@
+<beans xmlns="http://www.spex.liu/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.spex.liu/schema/beans 
+						http://www.spex.liu/schema/beans/spex-beans.xsd">
+
+	<bean id="login" class="com.spex.controller.LoginController" />
+	
+</beans>

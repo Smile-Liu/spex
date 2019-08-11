@@ -1,0 +1,40 @@
+<beans xmlns="http://www.spex.liu/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.spex.liu/schema/beans 
+						http://www.spex.liu/schema/beans/spex-beans.xsd">
+
+	<bean id="tom" class="org.spex.test.all.TestPropertyBean" primary="true">
+		<property name="name" value="tom" />
+		<property name="parentNames">
+			<list>
+				<value>t</value>
+				<value>m</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="lucy" class="org.spex.test.all.TestPropertyBean">
+		<property name="name" value="lucy" />
+		<property name="parentNames">
+			<list>
+				<value>l</value>
+				<value>c</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="jekky" class="org.spex.test.all.TestPropertyBean">
+		<property name="name" value="jekky" />
+		<property name="parentNames">
+			<list>
+				<value>j</value>
+				<value>k</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="family" class="org.spex.test.all.TestBean" autowire="byType">
+		<property name="name" value="mouse-amily"/>
+	</bean>
+	
+</beans>
